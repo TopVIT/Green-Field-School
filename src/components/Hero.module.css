@@ -1,0 +1,133 @@
+.container{
+    /* width: 100vw; */
+    position: relative;
+    overflow-x: hidden;
+    z-index: -1;
+
+}
+
+.image-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin-top: 90px;
+    background: url('../assets/img.avif') center/cover no-repeat;
+    z-index: -1; 
+    display: flex; 
+    flex-direction: column;
+    align-items: start; 
+    justify-content: center;
+    padding-left: 12%;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.image-container h1 {
+    color: #D4AF37;
+    position: relative;
+    z-index: 2;
+    font-size: 4.5rem;
+    width: 55%;
+    font-family: roboto-bold, roboto, sans-serif;
+}
+.image-container p {
+    width: 55%;
+    color: white;
+    position: relative;
+    z-index: 2;
+    font-size: 22px;
+    font-family: roboto-bold, roboto, sans-serif;
+}
+
+
+.content-container{
+    position: relative;
+    background-color: #F4F6F7;
+    padding: 40px;
+    margin-top: 95vh;
+    border-top: 5px solid #D4AF37;
+    z-index: 1;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    color: #0a6072;
+    font-family: "Archivo", Sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+}
+.heading h2{
+    color: #0b2b57;
+    font-family: "Roboto", Sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.school-image{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.school-image img{
+    width: 90%;
+}
+
+.facilities-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.why-choose-container{
+    width: 100%;
+    /* height: 20vh; */
+    padding: 40px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 8em;
+    row-gap: 2em;
+    background-color: #e2f2ff;
+}
+
+.why-choose-para{
+    width: 80%;
+    padding: 6px 6px 6px 6px;
+    background-color: #0a6072;
+    border-radius: 6px 6px 6px 6px;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.8em;
+    text-align: justify;
+}
+
+.activities-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}

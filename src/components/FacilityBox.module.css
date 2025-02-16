@@ -1,0 +1,23 @@
+.box{
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box p{
+    color: #ff415c;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.box img{
+    width: 100px;
+    height: 100px;
+}
